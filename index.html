@@ -4,6 +4,7 @@
 <head>
     <title>Airspace Explorer</title>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="http://tawian.io/text-spinners/spinners.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
     <style>
         body {
@@ -17,10 +18,25 @@
             height: 100%;
             width: 100%;
         }
+
+        .load-wrapper {
+            width: 100%;
+            height: 100%;
+            font-size: 2.5em;
+        }
+
+        .hearts {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+        }
     </style>
 </head>
 
 <body>
+    <div class="load-wrapper">
+        <span class="loading hearts"></span>
+    </div>
     <div id="map"></div>
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>

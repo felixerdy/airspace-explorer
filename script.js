@@ -58,6 +58,7 @@ $.getJSON('Germany_Week22_2016-airspaces.json', (response) => {
         onEachFeature: onEachFeature
     }).addTo(map);
     map.fitBounds(airspaces.getBounds());
+    $('.load-wrapper').slideUp();
 })
 
 function onEachFeature(feature, layer) {
